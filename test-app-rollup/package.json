@@ -1,0 +1,13 @@
+{
+  "name": "test-app-rollup",
+  "version": "1.0.0",
+  "description": "Test app to test rollup bundler",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Sonja Laurila",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
