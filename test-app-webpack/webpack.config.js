@@ -1,6 +1,6 @@
 const path = require('path')
 
-const config = {
+module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'build'),
@@ -11,6 +11,7 @@ const config = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
+        exclude: /node_modules/,
         query: {
           presets: ['@babel/preset-react', '@babel/preset-env'],
         },
@@ -30,5 +31,3 @@ const config = {
     ]
   }
 }
-
-module.exports = config
