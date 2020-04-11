@@ -3,11 +3,24 @@
   "version": "1.0.0",
   "description": "Test app to test parcel bundler",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "parcel build src/index.html -d build/ --public-url ./"
+  },
   "author": "Sonja Laurila",
   "license": "ISC",
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "parcel-bundler": "^1.12.4"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
   }
 }
