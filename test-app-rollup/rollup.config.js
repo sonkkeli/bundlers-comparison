@@ -3,7 +3,7 @@ import commonjs from '@rollup/plugin-commonjs';
 import replace from '@rollup/plugin-replace'
 import { terser } from 'rollup-plugin-terser';
 import babel from 'rollup-plugin-babel';
-import image from '@rollup/plugin-image';
+import url from '@rollup/plugin-url';
 import css from 'rollup-plugin-css-only'
 
 export default {
@@ -22,7 +22,7 @@ export default {
       exclude: 'node_modules/**'
     }),
     commonjs(), // converts date-fns to ES modules
-    image(), // to handle the png file
+    url(), // to handle the png file
     css({ output: 'build/bundle.css' }),
     terser() // to minify the code
   ]
