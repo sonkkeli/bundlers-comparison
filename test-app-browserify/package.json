@@ -36,8 +36,7 @@
     ]
   },
   "browserify-css": {
-    "autoInject": true,
     "minify": true,
-    "rootDir": "."
+    "output": "build/bundle.css"
   }
 }
