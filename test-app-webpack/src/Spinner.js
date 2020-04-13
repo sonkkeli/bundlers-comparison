@@ -1,6 +1,5 @@
 import React from 'react';
 import pic from './pic.png';
-// const pic = require('./DV2021_laurila.jpg')
 
 const Spinner = () => {  
   return (
